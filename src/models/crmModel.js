@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const Schema = mongoose;
+const Schema = mongoose.Schema;
 
 export const ContactSchema = new Schema({
   firstName: {
@@ -22,6 +22,6 @@ export const ContactSchema = new Schema({
   },
   created_date: {
     type: Date,
-    default: new Date.now(),
+    default: Date.now(),
   },
 });
